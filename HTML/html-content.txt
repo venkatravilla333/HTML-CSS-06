@@ -137,3 +137,131 @@ HTML Elements
          width
          height
          title
+
+
+         4) List elements:
+   =============
+
+   <ul>: Defines an unordered (bulleted) list.
+   <ol>: Defines an ordered (numbered) list.
+   <li>: Represents a list item.
+   <dl>: Defines a description list.
+   <dt>: Represents a term in a description list.
+   <dd>: Provides the description for a term.
+
+   Attributes:
+   ---------- 
+
+     - type: we can use type attribute for only ordered and unordered elements.
+     - start and reversed attributes are only for ordered list.
+     - start will only work for numbers.
+        
+     - These are only for ordered list
+     
+       - Number (default)
+        
+       - type = 'a/A/I/i'
+     
+       - reversed
+
+       - start
+
+       - Alpha
+
+            lower case (a)
+            UPPER CASE (A)
+
+       - Roman
+
+            lower case (i)
+            UPPER CASE (I)
+
+     - These are only for unordered list
+
+       type:
+
+       - disc (default)
+       - circle
+       - square
+       - none
+
+
+5) Anchor element
+   ==============
+
+   <a href='' target=''>content </a>
+
+  - The <a> tag (anchor tag) in HTML is used to create a links in the webpage. 
+  - By using links we can navigate from one webpage to other web page(inter navigation).  
+  - By using links we can navigate from one section to another section with in the same webpage
+    (intra navigation).
+
+    Navigation:
+    ----------
+               1) Inter navigation (navigation between documents) 
+
+               2) Intra navigation (navigation between sections with in document)
+
+   Atttribute:
+   ----------
+   href => hyper reference
+   href = 'path of another webpage' or '#id value of section in same page'  
+   target => Specifies where to open the linked document.
+
+	        _blank 
+                _parent 
+                _self (default)
+                _top	
+
+   _blank    => Opens the linked document in a new window or tab.
+   _self     => Opens the linked document in the same tab as it was clicked (default).
+   framename => Opens the linked document in the named iframe.
+
+
+
+6) Button element
+   ==============
+
+  - The <button> tag in HTML is used to define the clickable button. <button> tag is used to submit the content. The images and text content can be used inside <button> tag.
+
+    Attributes
+    ----------
+    disabled
+    autofocus
+    type
+
+   Following are the three values of type attribute:
+
+   Button: The button value is used for the clickable button.
+   Submit: The submit value is used for submitting the form-data.
+   Reset: The reset value is used to reset the values of a form to its initial values.
+
+
+
+7) <br/>
+   =====
+
+  - The <br> tag in HTML document is used to create a line break in a text. It is self closing.
+  - Don't use br tag for the margin between two paragraphs, use CSS margin property instead.
+
+
+8) <hr>
+   ====
+
+   The <hr> tag in HTML stands for horizontal rule and is used to insert a horizontal rule to divide or separate document sections. The <hr> tag is an empty tag, and it does not require an end tag.
+
+   Attributes
+   ----------
+
+           width, 
+           color, 
+           size,
+           align.
+
+
+
+9) Center element
+   ==============
+
+  - The <center> HTML element is a block-level element that displays its block-level or inline contents centered horizontally within its containing element.
+  - This tag is not supported in HTML5. CSS’s property is used to set the alignment of the element instead of the center tag in HTML5.
