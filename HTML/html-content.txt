@@ -265,3 +265,179 @@ HTML Elements
 
   - The <center> HTML element is a block-level element that displays its block-level or inline contents centered horizontally within its containing element.
   - This tag is not supported in HTML5. CSS’s property is used to set the alignment of the element instead of the center tag in HTML5.
+
+
+10) HTML entities 
+    =============
+
+   => &nbsp; A commonly used HTML entity is the non-breaking space.
+
+   => &copy; It will show copy right symbol. 
+
+   => &reg;  It will show trademark symbol.
+
+
+11) Division element
+    ================
+
+   <div> </div>
+
+  - It is used to create divisions or sections inside the html documents.
+  - The <div> tag is used as a container for HTML elements.
+  - Div tag is Block level tag.
+  - It is a generic container tag.
+  - It is used to group various tags of HTML so that sections can be created.
+  - As we know Div tag is block-level tag, the div tag contains entire width. 
+    Hence, every div tag will be started from a new line, and not the same line.
+
+
+12) Span element
+    ============
+
+   <span> </span>
+
+  - The <span> tag is an inline container used to mark up a part of a text, or a part of document.
+
+   Note:
+   =====
+
+  - Div and Span Tags: These are generic containers that can be used to group and style content. <div> is a block-level element, and <span> is an inline element.
+
+  - <div>This is a block-level container.</div>
+
+  - <span>This is an inline container.</span>
+
+
+
+13) Formatting Elements
+    ===================
+
+  
+  Formatting elements were designed to display special types of text with css styles:
+
+  Bold text: <b> or <strong>
+  --------------------------
+
+  HTML5 provides two tags to make text bold: <b> and <strong>.
+  Both tags have the same effect of making the enclosed text bold, but <strong> is preferred because it indicates that the text is important for semantic purposes.
+
+  Italicized text: <i> or <em>
+  ----------------------------
+
+  HTML5 provides two tags to make text italic: <i> and <em>. Both tags have the same effect of making the enclosed text italic, but <em> is preferred because it indicates that the text has emphasis for semantic purposes.
+
+  Strike-through text: <del> or <s>
+  ---------------------------------
+
+  HTML5 provides two tags to make text strike-through: <s> and <del>. Both tags have the same effect of making the enclosed text strike-through, but <del> is preferred because it indicates that the text has been deleted for semantic purposes.
+
+  Superscript and subscript text: <sup> or <sub>
+  ----------------------------------------------
+
+  HTML5 provides two tags to make text superscript and subscript: <sup> and <sub>, respectively.
+
+  u and ins
+  ---------
+  HTML5 provides two tags u and ins. Both tags have the same effect of making underline.
+  <ins> is used for semantic purpose. The <ins> tags means content inserted after it was first published. The <u> tag is simply for underlining and has no meaning.
+
+  small vs big
+  ------------
+  In HTML, the <small> tag is used to emphasize small text or information that is of secondary significance, such as copyright and legal disclaimer.
+  The <small> tag can be used to mark up a copyright notice or license agreement.
+
+  HTML <big> tag was used to increase the text font size one level bigger than the document's base font size.
+
+
+  <b> - Bold text
+  <strong> - Important text
+
+  <i> - Italic text
+  <em> - Emphasized text
+
+  <mark> - Highlighted Text
+
+  <del> - Deleted text
+  <s>  - text strick
+
+  <ins> - Inserted text
+  <u> - Underline text
+
+  <sub> - Subscript text
+  <sup> - Superscript text
+
+  <small> - Smaller text
+  <big> tag - Big Text
+
+
+
+14) Table elements
+    ==============
+
+  <table>	- Defines a table
+  <caption>     - Defines a table caption
+  <thead>	- Groups the header content in a table
+  <tbody>	- Groups the body content in a table
+  <tfoot>	- Groups the footer content in a table
+  <tr>	        - Defines a row in a table (rows)
+  <th>	        - Defines a header cell in a table (columns)
+  <td>	        - Defines a data cell in a table (columns)
+  
+   Attributes:
+   ----------
+  1)
+
+   border = '1' | '5' | '10' => if we use border then no need of frame and rules.    
+   frame = box | border | above | below | hsides | vsides | lhs | rhs | void
+   rules = all | rows | cols | groups | none
+
+  2)
+
+   width => It will effect the table header & table body & table footer. 
+   height => It will give effect only to table body but not effect the table header(thead) & (tfoot) footer.
+
+  3)
+
+   cellspacing => It gives space between all cells.
+   cellpadding => It gives space with in cells.
+
+  4) 
+
+   colspan => merging columns in specific row. 
+   rowspan => merging rows in specific column.
+
+  5) 
+
+   text-align => text align horizontally.
+   vertical-align => text align vertically.
+
+  6)
+
+   align = left | center | right
+
+  7) 
+
+   bgcolor => bg color to table.
+
+   colspan
+   ------
+   Colspan is an attribute which assigns multiple columns to a cell of a table. The number of columns depends on the value entered by you in colspan="" attribute.
+
+   rowspan
+   -------
+   Rowspan in table, works similar to the clospan for columns, but here, we assign multiple rows to a cell using an attribute rowspan=""
+
+   horizontal alignment (text in table)
+   ------------------------------------
+
+   The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+
+   By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+
+   vertical alignment (text in table)
+   ----------------------------------
+
+   The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+   By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
+
