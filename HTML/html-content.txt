@@ -441,3 +441,75 @@ HTML Elements
 
    By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).
 
+
+
+
+15) Form element
+    ============
+
+Form element is used to take input from an user to send data to server and then db.
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+Form Elemenets:
+--------------
+
+The HTML <form> element can contain one or more of the following form elements.
+
+  <form>	=> Defines an HTML form for user input.
+  <input>	=> <input> element can be displayed in many ways, depending on the type attribute.
+  <label>	=> Defines a label for an <input> element.
+                   The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+  <textarea>	=> Defines a multiline input control (text area).
+                   The <textarea> element is often used in a form, to collect user inputs like comments or reviews.The size of a text area is specified by the cols and rows attributes.
+  <button>	=> Defines a clickable button.
+
+  <fieldset>	=> Groups related elements in a form.
+  <legend>	=> Defines a caption for a <fieldset> element.
+
+  <select>	=> Defines a drop-down list.
+  <option>	=> Defines an option in a drop-down list.(The <option> tags inside <select>  element define the available options in the drop-down list).(selected attribute)
+  <optgroup>	=> Defines a group of related options in a drop-down list.
+
+  <datalist>	=> Specifies a list of pre-defined options for input controls.
+
+-The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will   see a drop-down list of pre-defined options as they input data.
+
+-The <datalist> element's id attribute must be equal to the <input> element's list attribute (this  binds them together).
+  
+
+Form attributes:
+----------------
+
+-autocomplete: 'on' (in form opening tag).
+-novalidate => form-data (input) should not be validated when submitted.
+-onSubmit: form data will be submited when click on submit button.
+
+
+Input element Attributes
+------------------------
+
+  Input element attributes
+  ------------------------
+  1.type:        text | password | email | button | radio | checkbox | number | color | date | reset | submit | tel | range | time | month
+ 
+                The type attribute is used to specify the type of the input element. Its default value is text.
+
+  2.placeholder: Placeholder attribute is used to specify hint that describes the expected value of an input field.
+  3.value:       The value attribute is used to specify the value of the input element.
+  4.name:        The name attribute is used to specify the name of the input element.
+  5.maxlength:   This property is used to specifies the maximum number of characters allowed in an <input> element
+  6.size:        This property is used to specifies the width of <input> element(default 20 chars)
+  
+  7.required:    The required attribute specifies that an input field must be filled out before submitting the form.
+  8.disabled:    The disabled attribute specifies that the element should be disabled. The disabled attribute can be set to keep a user from using the < input > element until some other condition has been fulfilled.
+  9.readonly:    The readonly attribute specifies that an input field is read-only. A read-only input field cannot be modified. A form will still submit an input field that is readonly, but will not submit an input field that is disabled.
+
+
+   
+Note:
+-----
+
+- The default width of an input field is 20 characters.
+- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+- Name attribute should be same value for all radio buttons to select any one of them.
+- The <input type="submit"> defines button for submitting the form data to form-handler(function).

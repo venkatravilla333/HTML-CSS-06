@@ -7,6 +7,11 @@
     table{
       border-collapse: collapse;
     }
+    th, td{
+      text-align: center;
+      vertical-align: middle;
+      height: 30px;
+    }
   </style>
 </head>
 <body>
@@ -23,18 +28,17 @@
     <tbody>
       <tr>
         <td>sachin</td>
-        <td>40</td>
-        <td>mumbai</td>
+        <td rowspan="3">40</td>
+        <td rowspan="3">mumbai</td>
       </tr>
       <tr>
-        <td>sachin</td>
-        <td>40</td>
-        <td>mumbai</td>
+        <td>Rohit</td>
+        <!-- <td>35</td> -->
       </tr>
       <tr>
-        <td>sachin</td>
-        <td>40</td>
-        <td>mumbai</td>
+        <td>Rahul</td>
+        <!-- <td>30</td> -->
+        
       </tr>
       <tr>
         <td>sachin</td>
@@ -49,7 +53,7 @@
     </tbody>
     <tfoot>
       <tr>
-        <td>This is footer</td>
+        <td colspan="3">This is footer</td>
       </tr>
     </tfoot>
   </table>
