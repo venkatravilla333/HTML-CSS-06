@@ -513,3 +513,156 @@ Note:
 - The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
 - Name attribute should be same value for all radio buttons to select any one of them.
 - The <input type="submit"> defines button for submitting the form data to form-handler(function).
+
+
+
+16) marquee element
+    ===============
+
+The <marquee> tag is a container for creating scrollable text or images within a web page from either left to right or vice versa, or top to bottom or vice versa. But this tag has been deprecated in the new version of HTML, i.e., HTML 5
+
+  Attributes
+  ----------
+  width
+  height
+  direction : left (default right to left) | right | up | down
+  behaviour : slide | scrolling (defalut) | alternate
+  scrolldelay : default 85 (to make slow)
+  scrollamount : default 6 (to make speed)
+  bgcolor
+  loop : times of loop (The default value of loop is INFINITE)
+
+                 
+
+17) symantic elements
+    =================
+
+Semantic elements = elements with a meaning.
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
+  <table>       :  Defines table.
+  <form>        :  Defines form.
+
+  <details>     :  Defines additional details that the user can view or hide.
+  <summary>     :  Defines a visible heading for a <details> element.
+
+  <header>      :  Defines a header for a document or section.
+  <nav>         :  Defines navigation links (nav contains <a> tag).
+  <footer>      :  Defines a footer for a document or section.
+
+  <main>        :  Specifies the main content of a document.
+  <section>     :  The <section> element defines a section in a document.
+  <article>     :  Defines an article. Examples of where the <article> element can be used.
+                   (Forum posts, Blog posts, User comments, Product cards, Newspaper articles)
+
+  <aside>	:  Defines content aside from the page content. The <aside> content should be indirectly related to the surrounding content.
+  
+  <figure>      :  Specifies self-contained content, like illustrations, diagrams, photos etc.
+  <figcaption>  :  Defines a caption for a <figure> element.
+
+
+Note: All semantic tags contains no default styles as like div.
+
+
+
+18) iframe
+    ======
+
+The iframe in HTML stands for Inline Frame.
+
+ - Use the <iframe> tag to embed another document within the current HTML document.
+ - The HTML iframe "name" attribute is used to specify a reference for an <Iframe> element.
+ - The iframe is basically used to show a webpage inside the current web page. 
+ - The "src" attribute is used to specify the URL of the document that occupies the iframe.
+
+   Attributes
+   ----------
+   src
+   width
+   height
+   name
+   frameBorder
+
+-An iframe can be used as the target frame for a link. The target attribute of the link must refer  to the name attribute of the iframe.
+-Bydefault iframe has border, we can remove border by using css also.
+
+
+19) Media Elements
+    ==============
+
+ - HTML5 introduces media elements like <audio> and <video> for displaying and playing audio 
+   and video content.
+ - The <video> tag is used to embed video content in a document, such as some videos. 
+ - The <audio> tag is used to embed sound content in a document, such as some audios.
+   
+   <audio controls autoplay muted loop>
+
+     <source src="">
+   
+   </audio>
+
+   <video width="320" height="240" controls autoplay muted loop>
+
+     <source src="">
+     
+   </video>
+
+   Attributes
+   ----------
+   width
+   height
+   controls
+   autoplay
+   muted
+   poster
+   loop
+
+ - The <source> element allows you to specify alternative audio files.
+ - controls: attribute adds audio controls, like play, pause, and volume.
+ - autoplay: it will work with muted for videos.
+ - loop: Specifies that the video will start over again, every time it is finished.
+ - muted: Specifies that the audio output of the video should be muted.
+ - poster: Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+
+
+20) Web storage
+    ===========
+
+   => Local storage
+
+   => Session storage
+
+With web storage, web applications can store data locally within the user's browser.
+
+Before HTML5, application data had to be stored in cookies, included in every server request. 
+Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+
+It is used to store data on the client side. It has no expiration time, so the data in the LocalStorage exists always till the user manually deletes it.
+
+HTML web storage provides two objects for storing data on the client:
+
+window.localStorage - stores data with no expiration date
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+=> Store
+
+   localStorage.setItem("name", "Hari");
+
+=> Retrieve
+
+   document.getElementById("result").innerHTML = localStorage.getItem("name");
+
+=> remove
+
+   localStorage.removeItem('name')
+
+   localStorage.clear()
+
