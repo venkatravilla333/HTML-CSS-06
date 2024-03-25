@@ -1,0 +1,27 @@
+
+                                         CSS CONTENT
+                                         ===========
+
+
+1. What is CSS
+   ===========
+
+CSS stands for Cascading Style Sheet. It is a styling language, by using CSS we can style the html content or elements on webpage by using CSS properties. CSS properties will be in key value pair. 
+
+
+2. How many ways we can add css to html elements
+   =============================================
+
+
+   1) Inline 
+
+   - By using style attribute we can apply css directly to that html element. By using inline style we can apply only css to only one element at a time.
+
+   2) Internal
+
+   - By using style tag in head tag we can apply css to many html elements in the same html file at a time html elements. 
+
+   3) Extrenal
+
+   - By using external style sheet we can apply css to many html elements in different html files at a time. We can link external css file to html file by using link tag in head tag.
+
