@@ -1,0 +1,118 @@
+
+/* tag selector  */
+
+/* p{
+  color: red;
+} */
+
+/* id selector  */
+
+/* #myid{
+  color: red;
+} */
+
+/* class selector */
+
+/* .myclass{
+  color: red;
+} */
+
+/* universal selector  */
+/* *{
+  color: red;
+} */
+
+/* Grouping selector */
+/* p, #one, .myclass{
+ color: red;
+} */
+
+/* combinator selectors  */
+
+/* decendent selector  */
+/* #parent p{
+  color: red;
+} */
+/* child selctor  */
+/* #parent > p {
+  color: red;
+} */
+
+/* adjecent sibling  */
+
+/* #parent + p{
+  color: red;
+} */
+
+/* general sibling  */
+
+/* #parent ~ p{
+  color: red;
+} */
+
+/* Pseudo-Class Selector: */
+
+/* p:hover{
+  color: red;
+} */
+
+/* Pseudo-Element Selector: */
+
+/* p::first-letter{
+  color: red;
+} */
+
+/* p::first-line{
+  color: red;
+} */
+
+/* p::before{
+  color: red;
+  content: "Hi";
+}
+p::after{
+  color: red;
+  content: "Bye";
+} */
+
+
+/* Attribute selectors */
+
+/* Based on attribute value  */
+
+/* [title='hello']{
+  color: red;
+} */
+
+/* attribute value starts with  */
+
+/* [title^='hello']{
+  color: red;
+} */
+
+/* attribute value ends with  */
+
+/* [title$='hello']{
+  color: red;
+} */
+
+/* attribute value contains */
+
+/* [title*='hello']{
+  color: red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
