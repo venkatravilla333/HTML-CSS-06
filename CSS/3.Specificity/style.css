@@ -1,0 +1,27 @@
+#myid{
+  color: deeppink !important;
+}
+
+
+
+#myid{
+  color: chartreuse;
+}
+
+.mypara{
+  color: yellow;
+}
+
+div p {
+  color: aqua;
+}
+
+p {
+  color: blue;
+}
+
+*{
+  color: red;
+}
+
+
