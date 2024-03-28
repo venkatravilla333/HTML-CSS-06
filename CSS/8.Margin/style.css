@@ -1,0 +1,23 @@
+div{
+  color: red;
+  background-color: aqua;
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  /* padding: 20px; */
+  /* margin: 20px; */
+  /* margin: 20px 40px 10px 5px; */
+  /* margin: 20px 40px; */
+  /* margin: 20px 40px 10px; */
+  /* margin-top:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  margin-left:20px; */
+  margin: auto;
+  text-align: center;
+}
+
+body{
+  border: 2px solid blue;
+}

@@ -281,3 +281,423 @@ Controls the spacing between words in a block of text.
 Example: word-spacing: 4px;
 
 These are some of the essential text properties in CSS. By using these properties, you can customize the appearance and layout of text on your web pages, making it an integral part of web design and typography.
+
+
+
+6. Background Properties
+   =====================
+
+
+1.background-color:
+  ---------------
+
+<style>
+  .example {
+    background-color: #F0F0F0;
+  }
+</style>
+
+<div class="example">
+  This is a div with a colored background.
+</div>
+
+2.background-image:
+  ----------------
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+  }
+</style>
+
+<div class="example">
+  This is a div with a background image.
+</div>
+
+
+3.background-repeat: ( repeat (default) | repeat-x | repeat-y | no-repeat )
+  -----------------
+
+=> Repeating horizontally and vertically 
+
+.example-repeat {
+    background-image: url('repeating-pattern.png');
+    background-repeat: repeat;
+}
+
+=> Repeating horizontally only 
+
+.example-repeat-x {
+    background-image: url('horizontal-pattern.png');
+    background-repeat: repeat-x;
+}
+
+=> Repeating vertically only 
+
+.example-repeat-y {
+    background-image: url('vertical-pattern.png');
+    background-repeat: repeat-y;
+}
+
+=> No repetition 
+
+.example-no-repeat {
+    background-image: url('single-image.jpg');
+    background-repeat: no-repeat;
+}
+
+ex:
+--
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+  }
+</style>
+
+<div class="example">
+  This is a div with a non-repeating background image.
+</div>
+
+
+4.background-position:   left top | left center | left bottom | right top | right center |
+  ------------------     right bottom | center top | center center | center bottom
+  
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-position: center top;
+  }
+</style>
+
+<div class="example">
+  This is a div with a centered top-aligned background image.
+</div>
+
+
+5.background-size:
+  ---------------
+
+=> Original size (auto) 
+
+.example-auto {
+    background-image: url('large-image.jpg');
+    background-size: auto;
+}
+
+=> Scale to cover the content area 
+
+.example-cover {
+    background-image: url('image.jpg');
+    background-size: cover;
+}
+
+=> Scale to fit within the content area
+
+.example-contain {
+    background-image: url('image.jpg');
+    background-size: contain;
+}
+
+=> Specific size in pixels 
+
+.example-specific-size {
+    background-image: url('image.jpg');
+    background-size: 200px 150px;
+}
+
+=> Relative size with percentages 
+
+.example-percent-size {
+    background-image: url('image.jpg');
+    background-size: 50% 75%;
+}
+
+Ex:
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-size: cover;
+  }
+</style>
+
+<div class="example">
+  This is a div with a background image that covers the entire element.
+</div>
+
+Note:
+----
+
+The 'cover' tells the browser to cover the whole area of an element. 
+The 'contain' tells the browser to show the whole image without loosing image.
+
+
+6.background-attachment: (scroll | fixed)
+  ---------------------
+
+=> Background image scrolls with content (default) 
+
+.example-scroll {
+    background-image: url('scrolling-background.jpg');
+    background-attachment: scroll;
+}
+
+=> Background image remains fixed in place
+
+.example-fixed {
+    background-image: url('fixed-background.jpg');
+    background-attachment: fixed;
+}
+
+Ex:
+--
+
+<style>
+  .example {
+    background-image: url('image.jpg');
+    background-attachment: fixed;
+  }
+</style>
+
+<div class="example">
+  This is a div with a fixed background image.
+</div>
+
+
+These are just a few examples of how you can use CSS background properties to style and enhance the backgrounds of HTML elements. You can combine these properties and adjust their values to achieve the desired visual effects in your web pages.
+
+
+
+7. Border properties
+   =================
+
+In CSS (Cascading Style Sheets), you can use various properties to control the appearance of borders around elements such as text, images, and containers. Here are some common border properties in CSS:
+
+1)border-width:
+--------------
+
+This property sets the width of the border. You can specify the width in pixels, ems, rems, percentages, or other units. 
+
+border-width: 2px;
+
+2)border-color:
+-------------- 
+This property sets the color of the border. You can use color names, hexadecimal values, RGB values, or other color notations. 
+
+border-color: #FF0000;
+
+
+3)border-style:
+-------------- 
+
+This property sets the style of the border, and it can take values like "solid," "dashed," "dotted," "double," "none,". 
+
+border-style: solid;
+
+
+4)border-radius:
+---------------
+ 
+This property sets the radius of the corners of an element, creating rounded corners. You can specify different values for each corner or use a single value for all corners.
+
+The border-radius property is actually a shorthand property for the 
+
+border-top-left-radius, 
+border-top-right-radius, 
+border-bottom-right-radius 
+border-bottom-left-radius 
+ 
+border-radius: 10px;
+
+5)border-image:
+--------------
+ 
+This property allows you to use an image as a border instead of a solid color. It's a more advanced property and requires defining an image to use as a border.
+
+border-image: url(border-image.png) 27 27 27 27 round round;
+
+      border-image-source: url('./102.PNG');
+      border-image-slice: 30%;
+      border-image-width: 20px;
+      border-image-repeat: repeated, stretched(default).
+      border-image-outset: 20px
+
+
+border-image is a shorthand property that lets you use an image or CSS gradient as the border of an element.
+
+The border-image property can be applied to any element, except internal table elements (e.g. tr, th, td) when border-collapse is set to collapse.
+
+The border-image-outset property specifies the amount by which the border image area extends beyond the border box
+
+
+border:
+------ 
+
+This is a shorthand property that combines border-width, border-style, and border-color into a single declaration.
+ 
+border: (width) 1px (style)solid (color) #000;
+
+
+
+
+8. Margin and Padding properties
+   =============================
+
+margin
+------
+
+The CSS margin property is used to give space around an element on a web page. It defines the area outside the element's border. Margins are used to create space and separation between elements.
+
+
+1)margin-top: 10px;
+
+2)margin-right: 20px;
+
+3)margin-bottom: 15px;
+
+4)margin-left: 25px;
+
+5)margin: 10px 20px 15px 25px; (top, right, bottom, left) 
+
+6)margin: 10px 20px   (Top and bottom have 10px margin, right and left have 20px margin)
+ 
+7)margin: 10px 20px 15px   (Top has 10px margin, right and left have 20px margin, bottom has 15px margin) 
+8)margin: 10px  (all sides)
+
+9)margin: auto
+
+You can set the margin property to auto to horizontally center the element within its container.
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+
+Margin Collapse
+---------------
+
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+This does not happen on left and right margins! Only top and bottom margins!
+
+
+padding
+-------
+
+Padding is used to create space within an element, between the element's content and its border.
+
+
+1)padding-top: 10px;
+
+2)padding-right: 20px;
+
+3)padding-bottom: 15px;
+
+4)padding-left: 25px;
+
+5)padding: 10px 20px 15px 25px; /* top, right, bottom, left */
+
+6)padding: 10px 20px  
+
+7)padding: 10px 20px 15px
+
+8)padding: 10px (all sides)
+
+
+margin vs padding
+-----------------
+
+In CSS, both margin and padding are properties used to control spacing, but they affect the layout of elements in different ways:
+
+Margin:
+------
+
+-Margin controls space outside an element, between the element's border and neighboring elements.
+-Margins create separation between elements.
+-Margin values can be positive (adding space) or negative (reducing space).
+-Margin do not have a background color or visible area, they only affect the spacing between elements.
+-Margins can "collapse" under certain conditions, meaning that if two adjacent elements have margins, the larger of the two margins is used, and they don't stack.
+
+Ex:
+
+div {
+  margin: 10px;
+}
+
+In this example, a div element will have a 10-pixel margin around it, creating space between it and neighboring elements.
+
+Margin collapse
+---------------
+
+The concept of "margin collapsing" in CSS refers to how margins between adjacent elements are computed when they are touching or close to each other. When two or more vertical margins meet or overlap under specific conditions, they don't simply add up or stack on top of each other as you might expect. Instead, they collapse, and the larger of the two margins is used to create the space between the elements. Here's a more detailed explanation:
+
+=> Margins Collapsing Conditions:
+
+Margins can collapse in the following situations:
+
+When two or more block-level elements are vertically adjacent, meaning they are stacked on top of each other in the document flow.
+When there is no padding, border, or inline content separating the elements.
+When the margins are of the same type (e.g., both are top margins or both are bottom margins).
+
+=> Result of Margin Collapsing:
+
+When margins collapse, the larger of the margins is used, and the smaller margin effectively disappears in terms of creating spacing.
+This means that if one element has a margin of 10px, and the adjacent element has a margin of 20px, the effective spacing between them will be 20px, not 30px.
+
+=> Preventing Margin Collapsing:
+
+You can prevent margin collapsing by introducing a non-collapsible element between the two elements. For example, adding padding, a border, or inline content between the elements will stop margin collapsing.
+
+Example of margin collapsing:
+
+
+p {
+  margin: 10px 0;
+}
+
+div {
+  margin: 20px 0;
+}
+
+In this example, if a <p> element and a <div> element are placed next to each other, the effective vertical space between them will be 20px, not 30px, because the larger of the two margins (20px) takes precedence
+
+
+
+Padding:
+-------
+
+-Padding controls the space inside an element, between the element's content and its border.
+-Padding is used to create space within an element, affecting the content's position within the   element's boundaries.
+-Padding values can be positive (adding space) and are never negative.
+-Padding has a background color and visible area. It extends the background of the element.
+
+EX:
+
+div {
+  padding: 10px;
+}
+
+In this example, a div element will have a 10-pixel padding inside it, pushing the content away from the border.
+
+
+Note: Inline elements vertical padding
+====
+
+In CSS, inline elements, by default, do not respect vertical padding in the same way that block-level elements do. Vertical padding on inline elements will not push away adjacent inline elements. Instead, it may cause overlapping or wrapping of the content within the inline element.
+
+When you apply vertical padding to an inline element, such as <span> or a text within a paragraph, it increases the height of the element but doesn't create space around it like it does with block-level elements. This means that if you have multiple inline elements with padding, they might overlap or wrap to the next line depending on the available space within their container.
+
+If you want to create space around inline elements, you can use margin instead of padding, or you can change the display property of the elements to inline-block or inline-flex, which will make them behave more like block-level elements, respecting vertical padding and margin.
+
+<p>
+  <span class="inline">This is some text.</span>
+  <span class="inline">This is some text with padding.</span>
+</p>
+CSS:
+
+
+span.inline {
+  padding: 10px;
+  margin: 10px;
+}
+
+In this example, the padding will increase the height of each inline element, but the adjacent inline elements won't be pushed away. They may overlap or wrap to the next line depending on the available width of the containing element. If you want to create space between these inline elements, you would need to use margin or consider changing the display property to make them behave like block-level elements.

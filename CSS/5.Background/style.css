@@ -1,0 +1,12 @@
+div{
+  /* background-color: aqua; */
+  background-image: url('./sachinbg.PNG');
+  background-repeat: no-repeat;
+  background-position:left top;
+  background-size: cover;
+  background-attachment: fixed;
+
+  width: 600px;
+  height: 350px;
+  border: 1px solid black;
+}
