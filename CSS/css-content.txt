@@ -701,3 +701,163 @@ span.inline {
 }
 
 In this example, the padding will increase the height of each inline element, but the adjacent inline elements won't be pushed away. They may overlap or wrap to the next line depending on the available width of the containing element. If you want to create space between these inline elements, you would need to use margin or consider changing the display property to make them behave like block-level elements.
+
+
+
+9. Width and height properties
+   ===========================
+
+Note: width and height in % => depends on  parent's width and height.
+====
+
+ - width = Width will be always fixed irrespective of screen size.
+
+ - min-width = min-width is fixed for given size and beyong min-width it depends on screen size.
+  
+ - max-width = max-width is fixed for given size and below max-width it depends on screen size.
+
+ - height = Height is fixed it will not be depend on screen size.
+
+ - min-height = min-height is fixed for given size and beyond min-height depends on screen size.
+
+ - max-height = max-height is fixed for given size and below max-height it depends on screen size.
+
+
+Ex:
+
+In CSS, height, min-height, and max-height are properties used to control the height of an element, such as a container or a block-level element. They serve different purposes and have distinct effects:
+
+height:
+------
+
+The height property sets the exact height of an element to a specific value in pixels, ems, rems, percentages, or other length units. This value is often fixed and doesn't change unless you explicitly modify it.
+If the content inside the element exceeds the specified height, it may overflow and be hidden or affect the layout of surrounding elements unless you use additional CSS properties to manage overflow, like overflow: hidden or overflow: scroll.
+
+.element {
+  height: 200px;
+}
+
+min-height:
+----------
+
+The min-height property sets the minimum height that an element should have. It ensures that the element is at least as tall as the specified value, but it can expand beyond that height if needed to accommodate content or other factors.
+If the content within the element is taller than the specified min-height, the element's height will adjust to fit the content.
+
+.element {
+  min-height: 100px;
+}
+
+max-height:
+----------
+
+The max-height property sets the maximum height that an element can have. It restricts the height to not exceed the specified value. If the content or other factors would cause the element to be taller than the max-height, it will be limited to that height, and scrollbars may appear to allow users to access the overflow content.
+
+.element {
+  max-height: 300px;
+}
+
+You can use these properties individually or in combination to control the height of elements in your web page layout. They are particularly useful when dealing with responsive web design, ensuring that elements adapt to various screen sizes and content while maintaining a defined range of height.
+
+
+
+
+10. Display Property
+    ================
+
+In CSS, the display property is used to control how an HTML element is displayed in the web browser. It defines the type of box an element generates, which in turn affects its layout and rendering on the web page. There are various display property values that determine the element's behavior. Here are some common display property values:
+
+1.block:
+-------
+
+The element is displayed as a block-level element.
+It takes up the full width available in its parent container and starts on a new line.
+Examples of block-level elements include <div>, <p>, and <h1>.
+
+2.inline:
+--------
+
+The element is displayed as an inline-level element.
+It takes up only as much width as necessary and does not start on a new line.
+Examples of inline-level elements include <span>, <a>, and <strong>.
+
+3.inline-block:
+--------------
+
+Combines characteristics of both inline and block.
+The element is inline, but it can have its own width and height, as well as margin and padding.
+Elements with this display type can be positioned inline, but they can have block-level styling.
+
+Note:
+----
+
+=> inline The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.
+
+=> inline-block It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values.
+
+=> block element will start on a new line and occupy the full width available. And you can set width and height values.
+
+
+4.none:
+------
+
+The element is not displayed at all, effectively making it invisible.
+It doesn't occupy any space in the layout.
+
+5.table:
+-------
+
+The element is displayed as a table element.
+It can have child elements with table-row, table-cell, and other table-related display values.
+
+6.flex:
+------
+
+The element becomes a flex container, and its children become flex items.
+It is used to create flexible and responsive layouts, allowing elements to adjust their sizes based on available space.
+
+7.grid:
+------
+
+The element becomes a grid container, and its children become grid items.
+It is used to create grid-based layouts, providing fine control over the arrangement of items.
+
+
+display: none vs visibility: hidden vs opacity: 0
+=================================================
+
+In CSS, display: none, visibility: hidden, and opacity: 0 are three different ways to hide elements on a web page, and they have distinct behaviors and use cases.
+
+display: none
+-------------
+
+When you apply display: none to an element, the element is completely removed from the layout of the page. It takes up no space, and the document flows as if the element does not exist.
+Child elements of the hidden element are also hidden, and they do not affect the layout.
+Events and interactions (e.g., clicking, hovering) cannot target hidden elements.
+Good for situations where you want to completely remove an element from view and layout.
+
+element {
+  display: none;
+}
+
+visibility: hidden
+------------------
+
+When you apply visibility: hidden to an element, the element is still part of the layout, but it is not visible. It still takes up space on the page, as if it were still visible. Child elements of the hidden element are also hidden, but they still affect the layout. Events and interactions can still target hidden elements. Useful when you want to hide an element but maintain its space in the layout.
+
+element {
+  visibility: hidden;
+}
+
+opacity: 0
+----------
+
+When you set opacity: 0, the element becomes fully transparent, but it still occupies the same space in the layout.
+Child elements of the transparent element remain visible and affect the layout.
+Events and interactions can target the transparent elements.
+Useful when you want to hide an element while maintaining its layout position and possibly animate the element's visibility.
+
+element {
+  opacity: 0;
+}
+
+In summary, the choice of which property to use (display, visibility, or opacity) depends on your specific requirements. If you want to completely remove the element and its space from the layout, display: none is suitable. If you want to hide the element but maintain its space in the layout, visibility: hidden is appropriate. If you want to hide the element but keep its space and potentially use transitions or animations, opacity: 0 is a good choice.

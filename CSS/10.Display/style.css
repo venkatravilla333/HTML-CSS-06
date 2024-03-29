@@ -1,0 +1,22 @@
+div{
+  border: 2px solid black;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  /* display: block; */
+  /* display: none; */
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  
+  
+}
+
+span{
+  border: 2px solid black;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+}
