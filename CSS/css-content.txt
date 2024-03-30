@@ -861,3 +861,201 @@ element {
 }
 
 In summary, the choice of which property to use (display, visibility, or opacity) depends on your specific requirements. If you want to completely remove the element and its space from the layout, display: none is suitable. If you want to hide the element but maintain its space in the layout, visibility: hidden is appropriate. If you want to hide the element but keep its space and potentially use transitions or animations, opacity: 0 is a good choice.
+
+
+
+11) Block level vs Inline elements default behaviour
+    ================================================
+
+In HTML, content placement within block-level and inline elements follows specific rules that determine how elements are displayed and how they interact with the surrounding content.
+
+Block-Level Elements:
+--------------------
+
+Block-level elements create distinct blocks or containers within the layout. They naturally start on a new line and take up the full available width of their parent container. Content within block-level elements is displayed in a "block" format.
+
+Here's how content is typically placed within block-level elements:
+-------------------------------------------------------------------
+
+On New Lines: 
+------------
+Block-level elements start on a new line, and subsequent block-level elements are displayed below the previous one. This means each block-level element creates a new "block" in the layout.
+
+Full Width: 
+----------
+By default, block-level elements span the full width of their parent container, unless specified otherwise using CSS properties like width.
+
+Vertical Stacking:
+----------------- 
+Block-level elements stack vertically, creating a clear separation between different sections or blocks of content. Common examples of block-level elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), lists (<ul>, <ol>), and div containers (<div>).
+
+
+<div>This is a block-level container.</div>
+<div>Another block-level container.</div>
+
+-Block-level elements naturally create distinct "blocks" within the layout. Content placed within   block-level elements is organized into separate, vertically stacked sections.
+-Block-level elements extend the full width of their parent container by default. This means that   they create new lines for each block-level element, and each block-level element takes up the     entire width available.
+-Block-level elements are ideal for structuring and organizing the content into different sections  or divisions of a web page.
+
+
+Inline Elements:
+---------------
+
+Inline elements, flow within the content of their parent block-level elements. They don't create new lines or block-level structures themselves.
+
+Here's how content is typically placed within inline elements:
+-------------------------------------------------------------
+
+Within Text Flow:
+---------------- 
+Inline elements flow within the text content of their parent block-level element. They do not create new lines, and their width adjusts to fit the content they contain.
+
+No Line Breaks:
+-------------- 
+Inline elements do not introduce line breaks, and they wrap to the next line only if there is not enough horizontal space within their parent block-level element.
+
+Horizontal Flow:
+--------------- 
+Content within inline elements flows from left to right (in left-to-right writing systems) or from right to left (in right-to-left writing systems).
+
+
+<p>This is a <span>inline element</span> within a paragraph.</p>
+In this example, the <span> element is an inline element and flows within the text of the paragraph. It doesn't introduce new lines or separate blocks of content.
+
+-Inline elements are designed to flow within the content of a block-level element. They do not create distinct blocks or new lines by default.
+-Inline elements are often used for applying formatting and styling to specific parts of text  or for embedding elements within a paragraph of text.
+-By default, inline elements do not create a new block formatting context and flow within the content of their parent block-level element. They only take up as much horizontal space as necessary to contain their content.
+-Inline elements do not accept width or height properties. The margin-top and margin-bottom properties do not create vertical spacing between inline elements in the same way they do for block-level elements.
+
+
+To control the placement of content within both block-level and inline elements, you can use various HTML and CSS properties, such as display, position, and others, to modify their default behaviors and achieve the desired layout and structure in your web pages.
+
+
+Content vs width vs height vs margin vs padding vs border
+=========================================================
+
+The behavior of content, width, height, margin, padding, and border for inline and block-level elements in HTML and CSS differs due to their default display characteristics.
+
+Content:
+-------
+Block-Level Elements: 
+
+Block-level elements create separate blocks or containers within the layout. They naturally start on new lines and contain their content within distinct blocks. Block-level elements can hold other elements and text content.
+
+Inline Elements: 
+
+Inline elements flow within the text content of their parent block-level element. They do not create new lines or separate blocks and are typically used for styling portions of text or inline content.
+
+Width and Height:
+----------------
+Block-Level Elements: 
+
+Block-level elements, by default, extend across the full width of their parent container. You can explicitly set their width using CSS to control the element's horizontal size, and you can set their height to control their vertical size.
+
+Inline Elements: 
+
+Inline elements take up only as much horizontal space as necessary to contain their content. Applying a width or height property to inline elements doesn't typically have the same effect as it does for block-level elements. Inline elements are usually self-sizing based on their content.
+
+Margin:
+------
+Block-Level Elements: 
+
+Block-level elements use the margin property to create spacing around them. Margins apply both vertically and horizontally, creating space outside the element's border. You can set margins for all four sides individually.
+
+Inline Elements:
+ 
+Inline elements can have horizontal margins (left and right), but their vertical margins (top and bottom) may not create the same spacing effects as they do for block-level elements. Margins often affect the horizontal layout and the positioning of the inline elements in relation to surrounding content.
+
+Padding:
+-------
+Block-Level Elements: 
+
+Block-level elements use the padding property to create spacing within the element, affecting the space between the element's content and its border. Padding properties apply both vertically and horizontally and can be set for all four sides individually.
+
+Inline Elements: 
+
+Inline elements can have horizontal padding (left and right), but vertical padding (top and bottom) may not have the same impact. Padding for inline elements often affects the horizontal spacing and the positioning of the content within the element.
+
+Border:
+------
+Block-Level Elements: 
+
+Block-level elements can have a border defined using the border property. The border surrounds the entire block and is often used for creating visual boundaries around content.
+
+Inline Elements: 
+
+Inline elements can also have borders, but the effect might differ. Borders may not consistently create a clear block-like boundary around inline elements due to their inline flow. The border can be applied to individual sides (e.g., border-left, border-right) to control how it appears in relation to the inline content.
+
+In summary, block-level elements are typically used to create distinct blocks of content with more control over their width, height, margins, padding, and borders. Inline elements, on the other hand, are used for styling inline content within a block-level element and may not have the same level of control over these properties due to their inline flow. However, you can modify the default behavior of elements using CSS to achieve the desired layout and styling.
+
+
+Inline elements 
+===============
+
+Horizontal behaviour:
+--------------------
+width: no effect
+padding: work correctly
+border: work corectly
+margin: work correctly
+
+Vertical behaviour:
+------------------
+height: no effect
+margin: no effect
+padding: go into block level element
+border: go into block level element
+
+
+
+
+12. Box model
+    =========
+
+The CSS box model is a container that contains multiple properties including borders, margins, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model. 
+
+The CSS box-model and box-sizing are related concepts, but they serve different purposes when it comes to controlling how the dimensions of elements are calculated. Let me explain the difference between them:
+
+The CSS box model, defines how an element's dimensions are calculated, taking into account the content, padding, border, and margin.
+By default, when you set the width and height properties of an element, you are specifying the dimensions of the content area. The padding, border, and margin are added to these dimensions.
+
+.box {
+
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 10px;
+}
+
+The total space the .box element occupies on the page is calculated by summing the content width, padding, border, and margin, as described in the previous answer.
+
+Box-Sizing Property:
+-------------------
+
+The box-sizing property allows you to control how an element's dimensions are calculated, specifically how width and height are interpreted.
+
+The box-sizing property has two possible values:
+
+content-box (default): 
+---------------------
+This is the default behavior, where width and height represent the dimensions of the content area. Padding, border, and margin are added to these dimensions.
+
+border-box:
+---------- 
+With this value, width and height include the content area, padding, and border. The margin is still outside of these dimensions. If you set an element's box-sizing property to border-box, the specified width and height values will include the padding and border. This can be helpful for creating more predictable layouts, as you can work with the total space an element occupies.
+
+Here's an example of how to use the box-sizing property:
+
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 10px;
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+In this case, the specified width and height values will include the padding and border, making it easier to control the overall dimensions of the element while ensuring that the content area remains a consistent size.
+
+In summary, the CSS box-model defines the standard model for calculating element dimensions, and the box-sizing property allows you to change how width and height are interpreted, either as content dimensions or including padding and border.

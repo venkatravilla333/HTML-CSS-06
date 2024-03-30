@@ -19,4 +19,10 @@ span{
   padding: 20px;
   margin: 20px;
   display: inline-block;
+  color: transparent;
+  background-image: url("./sachinbg.PNG");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
 }

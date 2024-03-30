@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+div{
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+span{
+  /* box-sizing: content-box; */
+  box-sizing: border-box;
+  display: inline-block;
+  border: 10px solid red;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+}
