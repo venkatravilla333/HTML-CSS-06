@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  background-color: yellow;
+}
+div{
+  border: 3px solid black;
+  position: relative;
+}
+
+h5{
+  border: 3px solid red;
+  /* position: static; */
+  /* position: relative; */
+  /* position: absolute; */
+  position: fixed;
+  top:50px;
+  /* left:50px */
+}

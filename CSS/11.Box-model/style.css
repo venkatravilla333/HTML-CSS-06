@@ -13,11 +13,11 @@ div{
 }
 span{
   /* box-sizing: content-box; */
-  box-sizing: border-box;
-  display: inline-block;
+  /* box-sizing: border-box; */
+  /* display: inline-block; */
   border: 10px solid red;
-  width: 400px;
-  height: 200px;
+  /* width: 400px; */
+  /* height: 200px; */
   padding: 10px;
   margin: 20px;
 }

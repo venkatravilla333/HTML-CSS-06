@@ -1059,3 +1059,72 @@ Here's an example of how to use the box-sizing property:
 In this case, the specified width and height values will include the padding and border, making it easier to control the overall dimensions of the element while ensuring that the content area remains a consistent size.
 
 In summary, the CSS box-model defines the standard model for calculating element dimensions, and the box-sizing property allows you to change how width and height are interpreted, either as content dimensions or including padding and border.
+
+
+13) Positions:
+    =========
+
+There are several positioning properties in CSS that control how elements are displayed and positioned on the page.
+
+
+   1) static :
+      ------
+      It is default position for all html elements we can not move element's position using top, left, right, bottom.
+
+   2) relative : 
+      --------
+      Element will be displayed as per normal flow of document.
+      It considers its own position as a reference point to move.
+
+   3) absolute :
+      --------
+      Element will not be displayed as per normal flow of document.
+      It considers its positioned relative parent element as a reference point to move.
+      If no positioned parent then it takes top most parent(html/viewport) as reference point.     
+      
+   4) fixed :
+      -----
+      Element will not be displayed as per normal flow of document.
+      It always considers html element(viewport) as a reference point to move, 
+      So it stays (fixed) in the same position even when the page is scrolled.
+
+   5) sticky :
+      ------
+      It considers its own postion as a refrence point.
+      Sticky positioning is a hybrid between relative and fixed positioning.
+      It will work initially as a relative (it will move certain extent) after that it will be fixed.
+
+
+z-index: 
+========
+
+The z-index property is typically used with positioned elements, such as relative,absolute,fixed. It does not have any effect on non-positioned (static) elements.
+
+- Controls the stacking order of elements. 
+- Elements with higher z-index values appear in front of elements with lower values.
+- If multiple elements have the same z-index, their stacking order is determined by their order in the HTML document. The element that appears later in the document will be on top.
+- The z-index property only works on elements with a position value other than static. 
+  So, you need to set element's position property to relative, absolute,fixed for z-index to have effect.
+- Negative values for z-index are allowed, and elements with negative z-index values will be placed  behind elements with positive values.
+  
+
+
+When you give both the parent and child elements position: absolute;, it can indeed affect the layout and dimensions of the parent element. Here's why:
+
+Position Absolute:
+ 
+When you set an element to position: absolute;, it's taken out of the normal flow of the document. This means it no longer affects the positioning of other elements and is positioned relative to its closest positioned ancestor (an ancestor with a position other than static, which is the default).
+
+Parent-Child Relationship:
+ 
+If both the parent and child elements are absolutely positioned, they are no longer in the normal flow of the document. Therefore, the dimensions of the parent element won't be influenced by the child's dimensions, and vice versa.
+
+Width Calculation:
+ 
+By default, an absolutely positioned element's width is calculated based on its content or specified width. If you don't explicitly set a width for the parent element, it will collapse to fit its content. Similarly, if you don't specify a width for the child, it will collapse to fit its content.
+
+Influence of Positioning:
+ 
+When you position both the parent and child absolutely, they are essentially taken out of the document flow. Thus, their dimensions don't influence each other as they would if they were part of the normal flow.
+
+Therefore, if you have a block-level parent element with absolute positioning and its child also absolutely positioned, the parent's width won't automatically adjust to fit the child's width. You would need to explicitly set the widths of both the parent and child elements if you want them to be a certain size relative to each other.
