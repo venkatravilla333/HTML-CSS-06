@@ -1064,7 +1064,9 @@ In summary, the CSS box-model defines the standard model for calculating element
 13) Positions:
     =========
 
-There are several positioning properties in CSS that control how elements are displayed and positioned on the page.
+In CSS position property is used to position HTML element in HTML document.
+
+While using position property, we take help of left, right, top, bottom and z-index properties to position HTML element. 
 
 
    1) static :
@@ -1090,7 +1092,7 @@ There are several positioning properties in CSS that control how elements are di
 
    5) sticky :
       ------
-      It considers its own postion as a refrence point.
+      It is used to position and stick an HTML element to top edge of viewport.
       Sticky positioning is a hybrid between relative and fixed positioning.
       It will work initially as a relative (it will move certain extent) after that it will be fixed.
 
@@ -1106,25 +1108,3 @@ The z-index property is typically used with positioned elements, such as relativ
 - The z-index property only works on elements with a position value other than static. 
   So, you need to set element's position property to relative, absolute,fixed for z-index to have effect.
 - Negative values for z-index are allowed, and elements with negative z-index values will be placed  behind elements with positive values.
-  
-
-
-When you give both the parent and child elements position: absolute;, it can indeed affect the layout and dimensions of the parent element. Here's why:
-
-Position Absolute:
- 
-When you set an element to position: absolute;, it's taken out of the normal flow of the document. This means it no longer affects the positioning of other elements and is positioned relative to its closest positioned ancestor (an ancestor with a position other than static, which is the default).
-
-Parent-Child Relationship:
- 
-If both the parent and child elements are absolutely positioned, they are no longer in the normal flow of the document. Therefore, the dimensions of the parent element won't be influenced by the child's dimensions, and vice versa.
-
-Width Calculation:
- 
-By default, an absolutely positioned element's width is calculated based on its content or specified width. If you don't explicitly set a width for the parent element, it will collapse to fit its content. Similarly, if you don't specify a width for the child, it will collapse to fit its content.
-
-Influence of Positioning:
- 
-When you position both the parent and child absolutely, they are essentially taken out of the document flow. Thus, their dimensions don't influence each other as they would if they were part of the normal flow.
-
-Therefore, if you have a block-level parent element with absolute positioning and its child also absolutely positioned, the parent's width won't automatically adjust to fit the child's width. You would need to explicitly set the widths of both the parent and child elements if you want them to be a certain size relative to each other.

@@ -1,0 +1,31 @@
+
+
+#red{
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  z-index: 2;
+
+}
+#blue{
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(35, 5, 229);
+  position: relative;
+  z-index: 1;
+  /* left: 10px; */
+  bottom: 110px;
+}
+#green{
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  /* left: 20px; */
+  bottom: 220px;
+  z-index: -3;
+  background-color: rgb(9, 231, 13);
+}
