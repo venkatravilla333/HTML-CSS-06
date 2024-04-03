@@ -6,19 +6,20 @@
   font-weight: bold;
 }
 
-/* body{
+body{
   display: flex;
   flex-direction: column;
-  
-} */
+
+}
 
 
 #wrapper-div{
- width: 70%;
+ width:65%;
  /* background-color: aqua; */
  margin: auto;
  display: flex;
  flex-direction: column;
+ margin-top: 50px;
 }
 
 #logo-div{
@@ -82,6 +83,6 @@ background-color: lightgray;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-
+  margin-bottom: 50px;
 }
 
