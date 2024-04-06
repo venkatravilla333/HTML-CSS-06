@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+#wrapper-div{
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  /* background-color: lightcoral; */
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#header-div{
+  width: 100%;
+  min-height: 40px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+}
+
+#main-div{
+  width: 100%;
+  min-height: 350px;
+  /* background-color: rgb(227, 158, 11); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#left-sidebar{
+  flex-basis: 40%;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#right-sidebar{
+  flex-basis: 58%;
+  /* background-color: rgb(42, 54, 165); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hero-div{
+min-height: 40%;
+background-color: chartreuse;
+display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+#sidebar-div{
+min-height: 56%;
+background-color: rgb(255, 0, 225);
+display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#content-div{
+  min-height: 66%;
+  background-color: #ec5a5a;
+  display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+#extra-div{
+  min-height: 30%;
+  background-color: #5c20b4;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#onemore-div{
+  width: 100%;
+  min-height: 100px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#images-div{
+flex-basis: 72%;
+background-color: blue;
+display: flex;
+justify-content: center;
+padding-top: 10px;
+}
+#posts-div{
+flex-basis: 26%;
+background-color: rgb(66, 211, 17);
+display: flex;
+justify-content: center;
+padding-top: 10px;
+}
+
+#footer-div{
+  width: 100%;
+  min-height: 40px;
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
