@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+#wrapper-div{
+  width: 816px;
+  height: 416px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 200px 400px 200px;
+  grid-template-rows: 200px 200px;
+  /* grid-gap: 10px; */
+}
+
+.child1{
+  background-color: brown;
+}
+.child2{
+  background-color: rgb(44, 165, 42);
+}
+.child3{
+  background-color: rgb(42, 63, 165);
+}
+.child4{
+  background-color: rgb(223, 198, 16);
+}
