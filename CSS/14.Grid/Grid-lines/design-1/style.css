@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.container-div{
+  width: 600px;
+  height: 440px;
+  /* border: 2px solid black; */
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 150px 300px 150px;
+  grid-template-rows: 80px 280px 80px ;
+  gap: 10px;
+}
+
+.holy{
+  background-color: rgb(54, 133, 198);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.nav{
+  background-color: rgb(145, 193, 234);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+    display: grid;
+      justify-content: center;
+      align-content: center;
+}
+.main{
+  background-color: rgb(188, 190, 188);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+    display: grid;
+      justify-content: center;
+      align-content: center;
+}
+.side{
+  background-color:rgb(145, 193, 234);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+    display: grid;
+      justify-content: center;
+      align-content: center;
+}
+.footer{
+  background-color: rgb(54, 133, 198);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+    display: grid;
+      justify-content: center;
+      align-content: center;
+}
