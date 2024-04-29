@@ -1,0 +1,38 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1000px){
+  #para-1{
+    background-color: yellow;
+    color: red;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1000px){
+  #para-1{
+    background-color: rgb(68, 255, 0);
+    color: rgb(13, 9, 207);
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 500px){
+  #para-1{
+    background-color: rgb(68, 255, 0);
+    color: rgb(13, 9, 207);
+    border: 5px solid black;
+  }
+}
+
+@media print {
+  #para-1{
+    color: rgb(255, 0, 217);
+  }
+}
+
+
+
+
+
+

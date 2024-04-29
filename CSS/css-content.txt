@@ -1105,6 +1105,101 @@ The z-index property is typically used with positioned elements, such as relativ
 - Controls the stacking order of elements. 
 - Elements with higher z-index values appear in front of elements with lower values.
 - If multiple elements have the same z-index, their stacking order is determined by their order in the HTML document. The element that appears later in the document will be on top.
-- The z-index property only works on elements with a position value other than static. 
-  So, you need to set element's position property to relative, absolute,fixed for z-index to have effect.
+- The z-index property only works on elements with a position value other than static. So, you need to set element's position property to relative, absolute,fixed for z-index to have effect.
 - Negative values for z-index are allowed, and elements with negative z-index values will be placed  behind elements with positive values.
+
+
+
+15. Responsive Design
+    =================
+
+Media queries
+-------------
+
+-Media queries are essential for creating responsive web designs that adapt to various devices and screen sizes, providing a better user experience.
+
+-Media query is a technic of applying different styles to an element based on certain condition.
+ 
+-They are commonly used to provide different styles for different devices by their features like type, width, height, orientaion.
+
+Syntax:
+
+1)@media
+  ------
+ 
+Media queries use the @media rule and have a specific syntax. 
+
+
+@media screen and (max-width: 600px) {
+
+  /* CSS rules for screens with a width of 600px or less */
+}
+
+In this example, the media query targets screens with a width of 600 pixels or less.
+
+2) Media Types:
+   ----------- 
+
+You can specify different media types (screen, print, speech) to apply styles in different contexts. The most commonly used media type is screen.
+
+-screen
+-print
+-speech
+
+3) Media Features:
+   --------------
+ 
+Media features like max-width, min-width, min-height, max-height, orientation,and many others are used to specify the conditions under which the CSS rules should be applied.
+
+-min-width
+-max-width
+-min-height
+-max-height
+-orientation (landscape, portrait)
+
+Here are some common examples of media queries:
+
+Max-width: 
+---------
+
+To apply styles when the viewport width is at most a certain size.
+
+@media screen and (max-width: 768px) {
+
+  /* CSS rules for screens with a width of 768px or less */
+}
+
+Min-width: 
+---------
+
+To apply styles when the viewport width is at least a certain size.
+
+
+@media screen and (min-width: 1024px) {
+
+  /* CSS rules for screens with a width of 1024px or more */
+}
+
+Orientation: 
+-----------
+
+To apply styles based on the device's orientation (portrait or landscape).
+
+
+@media screen and (orientation: landscape) {
+
+  /* CSS rules for landscape orientation */
+}
+
+4) Operators (Combining Conditions) 
+   --------------------------------
+
+You can combine multiple conditions using and, or, not, only to create more complex media queries.
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* CSS rules for screens between 768px and 1024px wide */
+}
+
+Media queries are essential for creating responsive web designs that adapt to various devices and screen sizes, providing a better user experience.
