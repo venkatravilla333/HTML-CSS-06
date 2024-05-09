@@ -1,0 +1,42 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-div{
+  width: 400px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 200px auto;
+  text-align: center;
+  line-height: 150px;
+  animation-name: first-animation;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  /* animation-iteration-count: 3; */
+  /* animation-direction: alternate-reverse; */
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-timing-function: ease;
+}
+
+@keyframes first-animation{
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: rgb(255, 238, 0);
+  }
+  100% {
+    background-color: rgb(4, 41, 161);
+  }
+}

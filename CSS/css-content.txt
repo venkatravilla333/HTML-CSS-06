@@ -1203,3 +1203,47 @@ You can combine multiple conditions using and, or, not, only to create more comp
 }
 
 Media queries are essential for creating responsive web designs that adapt to various devices and screen sizes, providing a better user experience.
+
+
+
+16. CSS Animations
+    ==============
+
+Animation is a process of changing elements style in a given duration.
+
+we can apply multiple css styles to an element during given duration by using @keyframe.
+
+
+syntax
+------
+
+@keyframe animation-name{
+
+keyFrame-selector{
+
+}
+
+- keyFrame-selectors
+  ------------------
+
+  "from" and "to" and we can give % also.
+ 
+- You should configure the animation name and animation duration on an element.
+
+properties on an element
+------------------------
+1)animation-name: (compulsory)
+2)animation-duration:(compulsory) (total animation time)
+3)animation-delay: starts animation after some delay of time. (animation starts time)
+4)animation-iteration-count: how many times animation need. 
+
+5)animation-direction: normal|reverse|alternate|alternate-reverse
+6)animation-fill-mode: backwards|forwards|none|both (before & after animation styles)
+7)animation-play-state: paused | running
+8)animation-timing-function: linear|ease-in|ease-out|ease-in-out (speed of animation)
+
+=> ease:   Default value. The animation has a slow start, then fast, before it ends slowly.
+=> linear: Play an animation with the same speed from beginning to end.
+=> ease-in: The animation has a slow start.
+=> ease-out: The animation has a slow end.
+=> ease-in-out: The animation has both a slow start and a slow end.
