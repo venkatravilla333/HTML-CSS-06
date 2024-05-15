@@ -1,0 +1,86 @@
+.parent1{
+  border: 2px solid black;
+}
+
+.child11{
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  float: left;
+}
+.child12{
+  width: 100px;
+  height: 100px;
+  background-color: #0532e5;
+  float: left;
+}
+
+.child13{
+  width: 100px;
+  height: 100px;
+  background-color: #ffe100;
+  float: left;
+}
+
+.clear-left::after{
+  content: " ";
+  display: block;
+  clear: left;
+}
+
+.parent2{
+  border: 2px solid green;
+}
+
+.child21{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: right;
+}
+.child22{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: right;
+}
+.child23{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  float: right;
+}
+
+.clear-right::after{
+  content: " ";
+  display: block;
+  clear: right;
+}
+.parent3{
+  border: 2px solid rgb(7, 157, 191);
+}
+
+.child31{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: left;
+}
+.child32{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
+}
+.child33{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  float: right;
+}
+
+.clear-both::after{
+content: " ";
+display: block;
+clear: both;
+}

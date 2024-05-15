@@ -809,6 +809,60 @@ It doesn't occupy any space in the layout.
 The element is displayed as a table element.
 It can have child elements with table-row, table-cell, and other table-related display values.
 
+Float and Clear 
+===============
+
+float: left | right | none
+--------------------------
+
+It is used to float an element either to the left or to the right in its parent container.
+
+float: left
+-----------
+float an element to the left in its parent container.
+
+=> Block level element will be converted into inline block element.
+=> Remaining childs will be pushed up in container.
+=> Height of parent container will be reduced.
+
+float: right
+------------
+float an element to the right in its parent container.
+
+float: none
+-----------
+It is used to remove float effect from an already floated element.
+
+
+
+clear: left | right | both
+--------------------------
+
+It is used to clear the effect of floating on the parent container.
+
+clear: left
+-----------
+It clears the effect of floating left on its parent container.
+
+clear: right
+------------
+It clears the effect of floating left on its parent container.
+
+clear: both
+-----------
+It clears the effect of floating left and right on its parent container.
+
+
+parent to be normal
+-------------------
+
+elementselector::after{
+content: " ",
+display: block,
+clear: left
+
+}
+
 6.flex:
 ------
 

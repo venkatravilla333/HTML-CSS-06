@@ -1,0 +1,12 @@
+.parent{
+  /* width: 50%; */
+  font-size: 100%;
+  border: 2px solid black;
+
+}
+
+.child{
+  /* width: 50%; */
+  font-size: 200%;
+  border: 2px solid rgb(206, 21, 21);
+}
